@@ -6,20 +6,19 @@ return {
     priority = 1000,
     config = function()
       -- vim.cmd.colorscheme "catppuccin"
-    end
+    end,
   },
   {
     "EdenEast/nightfox.nvim",
     config = function()
-      require('nightfox').setup({
+      require("nightfox").setup({
         options = {
           styles = {
             comments = "italic",
-          }
-        }
+          },
+        },
       })
       vim.cmd("colorscheme carbonfox")
-    end
-  }
+    end,
+  },
 }
-
